@@ -29,31 +29,6 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 });
 
 //Variables
-
-if (CurrentScreen == "ChatRoom") {
-    if (Player.Nickname == '') {
-        var tmpname = Player.Name;
-    } else {
-        var tmpname = Player.Nickname;
-    }
-    if (InventoryGet(Player, "Pronouns").Asset.Name == "HeHim") {
-        var tmpr1 = "He";
-        var tmpr2 = "him";
-        var tmpr3 = "his";
-        var tmpr4 = "he";
-    } else if (InventoryGet(Player, "Pronouns").Asset.Name == "SheHer") {
-        var tmpr1 = "She";
-        var tmpr2 = "her";
-        var tmpr3 = "her";
-        var tmpr4 = "she";
-    } else {
-        var tmpr1 = "They";
-        var tmpr2 = "them";
-        var tmpr3 = "their";
-        var tmpr4 = "they";
-    }
-}
-
 var BackgroundsTagList = [
     BackgroundsTagNone,
     BackgroundsTagIndoor,
@@ -1564,6 +1539,11 @@ CommandCombine([
         Description: "(target): changes clothes.",
         Action: (args) => {
             if (args === "") {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -2074,6 +2054,11 @@ CommandCombine([
                     "<p style='background-color:#5fbd7a'><b>ULTRAbc</b>: The ggts command must be followed by two numbers to  specify minutes and level (1-6).<p>\n" 
                 );
             } else {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }  
                 var stringGgts1 = args;
                 var stringGgts2 = stringGgts1.split(/[ ,]+/);
                 var minutes = stringGgts2[0];
@@ -2214,6 +2199,11 @@ CommandCombine([
                     "<p style='background-color:#5fbd7a'><b>ULTRAbc</b>: The itemcolor command must be followed by a color code in the format #000000 and optionally a target.</p>"
                 );
             } else {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 var stringItc1 = args;
                 var stringItc2 = stringItc1.split(/[ ,]+/);
                 var color = stringItc2[0];
@@ -2730,6 +2720,11 @@ CommandCombine([
         Tag: 'keydeposit',
         Description: "(hours): keeps your keys safe in the vault.",
         Action: (args) => {
+	    if (Player.Nickname == '') {
+                var tmpname = Player.Name;
+            } else {
+                var tmpname = Player.Nickname;
+            }
             var hours = args;
             if (hours != '') {
                 ServerSend("ChatRoomChat", {
@@ -3587,6 +3582,11 @@ CommandCombine([
         Description: "(target): removes clothes.",
         Action: (args) => {
             if (args === "") {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }  
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -3767,6 +3767,11 @@ CommandCombine([
         Description: "(target): becomes a fully restrained pet.",
         Action: (args) => {
             if (args === "") {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -3864,6 +3869,27 @@ CommandCombine([
                     "If FBC is enabled, use <b>/pose baseupper</b> only on yourself when /pose2 reset fails.</p>"
                 );
             } else {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
+                if (InventoryGet(Player, "Pronouns").Asset.Name == "HeHim") {
+                    var tmpr1 = "He";
+                    var tmpr2 = "him";
+                    var tmpr3 = "his";
+                    var tmpr4 = "he";
+                } else if (InventoryGet(Player, "Pronouns").Asset.Name == "SheHer") {
+                    var tmpr1 = "She";
+                    var tmpr2 = "her";
+                    var tmpr3 = "her";
+                    var tmpr4 = "she";
+                } else {
+                    var tmpr1 = "They";
+                    var tmpr2 = "them";
+                    var tmpr3 = "their";
+                    var tmpr4 = "they";
+                }
                 var stringPose1 = args;
                 var stringPose2 = stringPose1.split(/[ ,]+/);
                 var pose = stringPose2[0];
@@ -4661,6 +4687,11 @@ CommandCombine([
         Tag: 'prison',
         Description: "(minutes): stays in Pandora prison.",
         Action: (args) => {
+	    if (Player.Nickname == '') {
+                var tmpname = Player.Name;
+            } else {
+                var tmpname = Player.Nickname;
+            }
             var minutes = args;
             ServerSend("ChatRoomChat", {
                 Content: "Beep",
@@ -4687,6 +4718,11 @@ CommandCombine([
         Description: "(target): naked + underwear + clothes + restrain commands.",
         Action: (args) => {
             if (args === "") {
+	        if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                } 
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -4876,6 +4912,11 @@ CommandCombine([
         Description: "(target): adds random restraints.",
         Action: (args) => {
             if (args === "") {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -5385,6 +5426,27 @@ CommandCombine([
         Description: "(target): uses the sleeping pill on yourself or another player.",
         Action: (args) => {
             if (args === "") {
+	        if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
+		if (InventoryGet(Player, "Pronouns").Asset.Name == "HeHim") {
+                    var tmpr1 = "He";
+                    var tmpr2 = "him";
+                    var tmpr3 = "his";
+                    var tmpr4 = "he";
+                } else if (InventoryGet(Player, "Pronouns").Asset.Name == "SheHer") {
+                    var tmpr1 = "She";
+                    var tmpr2 = "her";
+                    var tmpr3 = "her";
+                    var tmpr4 = "she";
+                } else {
+                    var tmpr1 = "They";
+                    var tmpr2 = "them";
+                    var tmpr3 = "their";
+                    var tmpr4 = "they";
+                }
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -5457,6 +5519,11 @@ CommandCombine([
                     "<p style='background-color:#5fbd7a'><b>ULTRAbc</b>: The solidity command must be followed by a number between 1 and 99.</p>"
                 );
             } else {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 var solidity = args;
                 if (InventoryGet(Player, "ItemDevices") != null) {
                     if ((InventoryGet(Player, "ItemDevices").Asset.Name == "FuturisticCrate") || (InventoryGet(Player, "ItemDevices").Asset.Name == "WoodenRack")) {
@@ -5534,6 +5601,11 @@ CommandCombine([
                     "<p style='background-color:#5fbd7a'><b>ULTRAbc</b>: The superdice command must be followed by a number between 2 and 999999999.<p>\n" 
                 );
             } else {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 var sides = args;
                 if ((sides < 2) || (sides > 1000000000)) sides = 6;
                 const Result = [];
@@ -5579,6 +5651,11 @@ CommandCombine([
         Tag: 'timercell',
         Description: "(minutes): stays in the isolation cell.",
         Action: (args) => {
+	    if (Player.Nickname == '') {
+                var tmpname = Player.Name;
+            } else {
+                var tmpname = Player.Nickname;
+            }
             var minutes = args;
             ServerSend("ChatRoomChat", {
                 Content: "Beep",
@@ -5937,6 +6014,11 @@ CommandCombine([
         Description: "(target): removes all bindings, collar, harness, chastity, toys.",
         Action: (args) => {
             if (args === "") {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -6215,6 +6297,11 @@ CommandCombine([
         Description: "(target): changes underwear.",
         Action: (args) => {
             if (args === "") {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
@@ -6468,6 +6555,11 @@ CommandCombine([
         Description: "(target): removes all bindings.",
         Action: (args) => {
             if (args === "") {
+		if (Player.Nickname == '') {
+                    var tmpname = Player.Name;
+                } else {
+                    var tmpname = Player.Nickname;
+                }
                 ServerSend("ChatRoomChat", {
                     Content: "Beep",
                     Type: "Action",
