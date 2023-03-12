@@ -6046,7 +6046,7 @@ CommandCombine([
                     "<b>zones</b> = commands related to game zones.\n" +
                     "Several commands require or allow to specify a target. It can be a real name or a member number.\n" +
                     "Use <b>/uhelp new</b> to get info about changes in current ULTRAbc version.\n" +
-                    "Visit also our <a href='https://github.com/tetris245/tetris245/wiki' target='_blank'>Wiki</a></p>"
+                    "Visit also our <a href='https://github.com/tetris245/ULTRAbc/wiki' target='_blank'>Wiki</a></p>"
                 );
             } 
             if (args === "bondage") {
