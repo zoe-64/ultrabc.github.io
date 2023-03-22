@@ -4,6 +4,8 @@ ULTRA Bondage Club by Nemesea - Add-on for Ben987's BondageClub game
 
 ULTRAbc is a modSDK version of QAM, providing better compatibility with other add-ons, especially BCX and FBC.
 
+Most recent version: 1.1
+
 ## Installation 
 
 **Recommended methode with Tampermonkey** - link to the ULTRAbc loader: https://tetris245.github.io/ultrabc.github.io/ULTRAbcloader.js
