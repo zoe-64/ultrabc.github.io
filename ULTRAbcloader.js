@@ -10,7 +10,6 @@
 // @match https://www.bondage-europe.com/*
 // @match http://localhost:*/*
 // @icon data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-// @downloadURL  https://tetris245.github.io/ultrabc.github.io/ULTRAbcloader.js
 // @grant none
 // @run-at document-end
 // ==/UserScript==
