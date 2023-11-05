@@ -472,7 +472,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
     ULTRACellRun();
     ULTRAChatRoomClick();
     ULTRAChatRoomDrawBackground();
-    ULTRAChatRoomKeyDown();
+    //ULTRAChatRoomKeyDown();
     ULTRAChatRoomMenuDraw();
     ULTRAChatSearchExit();
     ULTRAChatSearchJoin();
