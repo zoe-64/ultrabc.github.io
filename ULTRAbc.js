@@ -585,7 +585,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
     async function ULTRAChatRoomKeyDown() {
         modApi.hookFunction('ChatRoomKeyDown', 4, (args, next) => {
-            if (HotkeysOn == true) {
+            /*if (HotkeysOn == true) {
                 if (KeyPress == 111) {                
                     ChatRoomSetLastChatRoom("");
                     ServerSend("ChatRoomLeave", "");
@@ -598,7 +598,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
                      ChatRoomCharacterUpdate(Player);
                      return;
                 }
-            }
+            }*/
             if (KeyPress == 13 && !event.shiftKey) {
                 var text = ElementValue("InputChat");
                 if (text.startsWith(",")) {
