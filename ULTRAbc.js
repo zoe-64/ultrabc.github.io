@@ -583,7 +583,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
         });
     }
 
-    async function ULTRAChatRoomKeyDown() {
+    async function ULTRAChatRoomKeyDown(event) {
         modApi.hookFunction('ChatRoomKeyDown', 4, (args, next) => {
             if (HotkeysOn == true) {
                 if (KeyPress == 111) {                
