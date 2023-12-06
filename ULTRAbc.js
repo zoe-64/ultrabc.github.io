@@ -7662,11 +7662,12 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
                 if (!InventoryAvailable(ChatRoomCharacter[pl], "WheelFortune", "ItemDevices")) {                
                     ChatRoomSendLocal("Does not have a wheel of fortune.");
                 } else {
-                    if (ChatRoomCharacter[pl].OnlineSharedSettings.MBS != null) {
-                        ChatRoomSendLocal("Has a MBS wheel of fortune.");
-                        if (ChatRoomCharacter[pl].OnlineSharedSettings.MBS.FortuneWheelSets != null) {
-                            ChatRoomSendLocal("Does not have custom options on this wheel.");             
-                        } else {
+                    if (ChatRoomCharacter[pl].OnlineSharedSettings.MBS == undefined) {
+                        ChatRoomSendLocal("Does not have a MBS wheel of fortune.");
+                    }
+                    if (ChatRoomCharacter[pl].OnlineSharedSettings.MBS != undefined) {
+                        ChatRoomSendLocal("Has a MBS wheel of fortune.");     
+                        if (ChatRoomCharacter[pl].OnlineSharedSettings.MBS.FortuneWheelSets == undefined) {
                             str = ChatRoomCharacter[pl].OnlineSharedSettings.MBS;
                             if (str.startsWith("ᯡ࠸䈌Ԁᜥ㠮恳ǴÒ⤡堲⍄אೄ䘡乀̀ව乌堣⏁琕ᦃ箎崇埝崛ԭాၒ㿔䢩ᦂ历័״㜭༹ᵆᘠ愨ȤĬࠠ䱈楏䮽㞁✒涧篮溼㹟煰ఄ")) {
                                 ChatRoomSendLocal("Does not have custom options on this wheel.");             
@@ -7693,12 +7694,10 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
                                     if (j == 0) {
                                         ChatRoomSendLocal("Does not have custom options on this wheel."); 
                                     }
+                            }
                         }
-                    }     
-                } else {
-                    ChatRoomSendLocal("Does not have a MBS wheel of fortune.");             
-                }
-            }
+                    }                     
+		}
             ChatRoomSendLocal(" "); 
             pl ++;
             } 
