@@ -1672,7 +1672,6 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
             Game: ChatRoomData.Game,
             Private: ChatRoomData.Private,
             Locked: ChatRoomData.Locked,    
-            MapData: ChatAdminMapData,
             Custom: ChatRoomData.Custom,
         };
         ServerSend("ChatRoomAdmin", {
