@@ -7171,22 +7171,22 @@ var bcModSDK=function(){"use strict";const o="1.2.0";function e(o){alert("Mod ER
                             let states = LSCGdata.StateModule.states;
                             var type = 'asleep';
                             var config = states.find(s => s.type == type);
-                            if (config.active == true) {
+                            if ((config != undefined) && (config.active == true)) {
                                 nt = 1;
                             }
                             var type = 'frozen';
                             var config = states.find(s => s.type == type);
-                            if (config.active == true) {
+                            if ((config != undefined) && (config.active == true)) {
                                 nt = 1;
                             }
                             var type = 'gagged';
                             var config = states.find(s => s.type == type);
-                            if (config.active == true) {
+                            if ((config != undefined) && (config.active == true)) {
                                 nt = 1;
                             }
                             var type = 'hypnotized';
                             var config = states.find(s => s.type == type);
-                            if (config.active == true) {
+                            if ((config != undefined) && (config.active == true)) {
                                 nt = 1;
                             }
                         }
