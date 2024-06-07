@@ -29,7 +29,7 @@ var bcModSDK=function(){"use strict";const o="1.2.0";function e(o){alert("Mod ER
         name: 'ULTRAbc',
         fullName: 'Ultra Bondage Club',
         version: UBCver,
-        repository: 'https://github.com/tetris245/ULTRAbc',
+        repository: 'https://github.com/zoe-64/ULTRAbc',
     });
 
     //Main variables and settings for UBC and The Moaner
