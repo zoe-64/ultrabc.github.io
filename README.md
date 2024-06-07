@@ -12,9 +12,9 @@ Most recent version: 3.2
 
 **Recommended methode with Tampermonkey** - links to the ULTRAbc loader: 
 
-Automatic: https://tetris245.github.io/ultrabc.github.io/ULTRAbcloader.user.js
+Automatic: https://zoe-64.github.io/ultrabc.github.io/ULTRAbcloader.user.js
 
-Non-automatic: https://tetris245.github.io/ultrabc.github.io/ULTRAbcloader.js
+Non-automatic: https://zoe-64.github.io/ultrabc.github.io/ULTRAbcloader.js
 
 You can find Tampermonkey here: https://www.tampermonkey.net/ (it's available for several browsers: Chrome, Microsoft Edge, Safari, Opera Next, Firefox, Dolphin, UC)
 
@@ -22,4 +22,4 @@ Manual installation: Add new script / Utilities / Insert link to non-automatic U
 
 To update: Go to Installed Scripts / Click on date corresponding to ULTRAbc (TM will search for new version and install it)
 
-**Bookmark methode** - link to the ULTRAbc bookmark: https://tetris245.github.io/ultrabc.github.io/ULTRAbcbookmark.js
+**Bookmark methode** - link to the ULTRAbc bookmark: https://zoe-64.github.io/ultrabc.github.io/ULTRAbcbookmark.js
