@@ -612,6 +612,7 @@ var bcModSDK=function(){"use strict";const o="1.2.0";function e(o){alert("Mod ER
                 console.log("ULTRAbc loaded: Version " + UBCver);
                 Player.OnlineSharedSettings.UBC = UBCver;
 		Player.OnlineSharedSettings.Inmap = false;
+                diaperWetter();
                 ServerAccountUpdate.QueueData({
                     OnlineSharedSettings: Player.OnlineSharedSettings
                 });
