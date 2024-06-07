@@ -1,1 +1,1 @@
-javascript:(function (){let n = document.createElement("script");n.setAttribute("language", "JavaScript");n.setAttribute("crossorigin", "anonymous");n.setAttribute("src", "https://zoe-64.github.io/zoe-64.github.io/ULTRAbc.js?_=" + Date.now());document.head.appendChild(n);})();
+javascript:(function (){let n = document.createElement("script");n.setAttribute("language", "JavaScript");n.setAttribute("crossorigin", "anonymous");n.setAttribute("src", "https://zoe-64.github.io/ULTRAbc.js?_=" + Date.now());document.head.appendChild(n);})();
